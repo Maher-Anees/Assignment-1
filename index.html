@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="stylesheet.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment#01</title>
+<script src="JSFile.js"></script>
+</head>
+<body>
+<table border="2px" align="center">
+  <tr>
+    <td><h2>List of Persons&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2></td>
+    <td><h2>Add / Update Person Form</h2></td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <table frame="border" id="innerTable">
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Action</th>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <form id="forms">
+        <table>
+          <tr>
+            <td>
+              <label for="Name" style="padding-right:10px;">Name :</label>
+              <br>
+              <label for="Gender" style="padding-right:10px;">Gender :</label>
+              <br>
+              <label for="Age :" style="padding-right:10px;">Age :</label>
+              <br>
+              <label for="City :" style="padding-right:10px;">City :</label></td>
+            <td>
+              <input type="text" id="name" >
+              <br>
+              <input type="radio" id="M" name="gender" value="male" >
+              <label for="male">Male</label>
+              <input type="radio" id="F" name="gender" value="female">
+              <label for="female">Female</label>
+              <br>
+              <input type="number" id="age" >
+              <br>
+              <select style="width:177px;" id="city">
+                <option value=""></option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Karachi">Karachi</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <div align="center">
+          <button type="reset" onClick="resetAll()" id="reset" > reset</button>
+          &emsp;
+          <button type="button" onClick="addRow()" id="add" > add</button>
+          &emsp;
+          <button type="button" onClick="updateRow()" id="update" disabled > update</button>
+        </div>
+      </form>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
